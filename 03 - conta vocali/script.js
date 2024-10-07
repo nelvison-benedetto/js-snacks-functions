@@ -10,7 +10,7 @@ const myMap = new Map();
 // Dichiara la funzione qui.
 function countVocals(){
     Array.from(word).forEach( (item,i) => {
-        counts[item] = (counts[item] || 0) + 1;
+        counts[item] = (counts[item] || 0) + 1; //count every item how many
         if (vocals.includes(item.toLowerCase())){   
             myMap.set(item,counts[item]);
         }
@@ -18,7 +18,6 @@ function countVocals(){
     )
     return  myMap; 
 }
-
 // Invoca la funzione qui e stampa il risultato in console
 console.log(countVocals());
 
