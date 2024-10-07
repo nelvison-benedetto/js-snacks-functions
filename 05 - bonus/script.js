@@ -6,15 +6,11 @@ e buonasera se è sera (oltre le 17)
 */
 
 const thename = 'Mario';
-now = new Date();
-
 function getNow(){return new Date;}
 
 // Dichiara la funzione qui.
-/onst greetings = (thename) => .getHours() 
-
-// nowok =  getNow()
-// console.log(nowok.getHours());
+const greetings = (thename) => {return getNow().getHours()>17?  `good evening ${thename}` :  ( getNow().getHours()>13?  `good afternoon ${thename}` : `good morning ${thename}`) ;}
+console.log(greetings(thename));
 
 // Invoca la funzione qui e stampa il risultato in console
 
